@@ -20,6 +20,8 @@ function Hero (name, marvel, id, shown, loc) {
 
 }
 
+Hero.prototype = heroProtoype;
+
 var heroList = [];
 
 heroList[0] = new Hero ( 'Iron Man', true, 0, false, '#' );
@@ -166,23 +168,23 @@ $("#dcBtn").click(function(){
 
 
 
-var interval = setInterval(function() {
+// var interval = setInterval(function() {
     
-    $("#timer").text(counter);
-    if (counter == 0) {
-       $("#name").hide();
-			$("#marvelBtn").hide();
-			$("#dcBtn").hide();
-			$("#timer_div").hide();
+//     $("#timer").text(counter);
+//     if (counter == 0) {
+//        $("#name").hide();
+// 			$("#marvelBtn").hide();
+// 			$("#dcBtn").hide();
+// 			$("#timer_div").hide();
 
-			$("#restart").show();
+// 			$("#restart").show();
         
-    }else{
-    	counter--;
-    }
+//     }else{
+//     	counter--;
+//     }
 
     
-}, 1000);
+// }, 1000);
 
 // if(correctTimes == 10){
 // 	$("#name").text("win");
